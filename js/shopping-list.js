@@ -15,7 +15,7 @@ var componentAddForm = {
                         <input class="number" v-bind:class="{ error: newItem.notValidNumber }" type="number" v-model="newItem.number" min="1" max="999">\
                         <select v-bind:class="{ error: newItem.notValidUnitId }" v-model="newItem.unitId">\
                             <option v-for="unit in quantityUnits" v-bind:value="unit.id" v-bind:key="unit.id">\
-                                {{ unit.title }} ({{ unit.shortcut }})\
+                                {{ unit.shortcut }}\
                             </option>\
                         </select>\
                         <input class="title" v-bind:class="{ error: newItem.notValidTitle }" type="text" v-model="newItem.title" maxlength="30">\
@@ -34,19 +34,19 @@ var componentListItem = {
             <td class="col-check">\
                 <span class="item-check" v-bind:class="{ checked: item.isChecked }" v-on:click="$emit(\'check-item\', item)"></span>\
             </td>\
-            <td>\
+            <td class="col-number">\
                 <input class="number"  v-bind:class="{ error: item.notValidNumber }" type="number" v-if="item.isEdit" v-model="item.number" min="1" max="999">\
                 <span class="item-number" v-else>{{ item.number }}</span>\
             </td>\
-            <td>\
+            <td class="col-unit">\
                 <select v-bind:class="{ error: item.notValidUnitId }" v-model="item.unitId" v-if="item.isEdit">\
                     <option v-for="unit in quantityUnits" v-bind:value="unit.id" v-bind:key="unit.id">\
-                        {{ unit.title }} ({{ unit.shortcut }})\
+                        {{ unit.shortcut }}\
                     </option>\
                 </select>\
                 <span class="item-unit" v-else>{{ quantityUnits[item.unitId].shortcut }}</span>\
             </td>\
-            <td>\
+            <td class="col-title">\
                 <input class="title" v-bind:class="{ error: item.notValidTitle }" type="text" v-if="item.isEdit" v-model="item.title" maxlength="30">\
                 <span class="item-title" v-else>{{ item.title }}</span>\
             </td>\
