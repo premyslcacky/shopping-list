@@ -1,0 +1,11 @@
+{
+    "items": [
+        { "id": 1, "unitId": 0, "number": 6, "title": "Jablek", "isChecked": true, "isEdit": false, "notValidNumber": false, "notValidUnitId": false, "notValidTitle": false },
+        { "id": 2, "unitId": 1, "number": 1, "title": "Ovesných vloček", "isChecked": false, "isEdit": false, "notValidNumber": false, "notValidUnitId": false, "notValidTitle": false },
+        { "id": 3, "unitId": 2, "number": 2, "title": "Brambor", "isChecked": false, "isEdit": false, "notValidNumber": false, "notValidUnitId": false, "notValidTitle": false },
+        { "id": 4, "unitId": 4, "number": 3, "title": "Polotučného mléka", "isChecked": false, "isEdit": false, "notValidNumber": false, "notValidUnitId": false, "notValidTitle": false },
+        { "id": 5, "unitId": 3, "number": 200, "title": "Šunkového salámu", "isChecked": false, "isEdit": false, "notValidNumber": false, "notValidUnitId": false, "notValidTitle": false }
+    ]
+}
+
+
